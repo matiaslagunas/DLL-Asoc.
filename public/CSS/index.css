@@ -1,95 +1,155 @@
-*{
-    padding: 0%;
-    margin: 0%;
+* {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
-body{
-    background-color:  rgb(84, 83, 83);
+
+body {
+    background-color: rgb(84, 83, 83);
 }
-header{
+
+header {
     height: 5em;
     width: 100%;
     background-color: #17a2b8;
 }
-header nav{
+
+header nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 7em;
 }
-.contenedor-nav-img a{
+
+.contenedor-nav-img a {
     margin: 1em 0;
     height: 100%;
-
 }
-.contenedor-nav-img a img{
+
+.contenedor-nav-img a img {
     width: 150px;
     height: 90%;
 }
 
-.navbar-nav{
+.navbar-nav {
     display: flex;
     gap: 2em;
 }
-.nav-item{
+
+.nav-item {
     list-style: none;
 }
+
 .nav-item a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
 }
 
-
-
-.main-contenedor{
+/* Carrusel */
+.main-contenedor {
     width: 100vw;
-    height: 100vh; /* Centra verticalmente */
-   
-
-}
-.main-contenedor img{
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-    object-position: center; 
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
 }
 
+.carousel {
+    display: flex;
+    width: 900%; /* Asegúrate de que sea el 900% para nueve imágenes */
+    transition: transform 1s ease-in-out; /* Suaviza la transición */
+}
 
-.titulo{
+.carousel-images {
+    display: flex; /* Asegura que las imágenes estén en una fila */
+}
+
+.carousel-images img {
+    width: 100vw; /* Cada imagen ocupa el 100% del ancho de la ventana */
+    height: 100vh; /* Cada imagen ocupa el 100% de la altura de la ventana */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+}
+
+.titulo {
     position: absolute;
     top: 10em;
     left: 10%;
 }
-.titulo h1{
+
+.titulo h1 {
     font-size: 50px;
     color: #fff;
 }
+
 .titulo h5 {
     font-size: 25px;
     color: #fff;
 }
 
-.links-con-foto{
+.links-con-foto {
     width: 100vh;
     height: 100%;
 }
-.consultoria-link-1{
+
+.consultoria-link,
+.asesoramiento-link {
     position: absolute;
+}
+
+.consultoria-link {
     bottom: 0em;
     left: 51%;
 }
-.consultoria-link-2{
-    position: absolute;
-    bottom:0em;
-    right: 51%;
 
+.asesoramiento-link {
+    bottom: 0em;
+    right: 51%;
 }
-.texto-consultoria img {
+
+/* Efecto de blur y sombra en imágenes */
+.consultoria-link img,
+.asesoramiento-link img {
+    transition: filter 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra normal */
+}
+.consultoria-link a div img,
+.asesoramiento-link a div img {
+    transition: filter 0.5s ease, box-shadow 0.5s ease;
+    box-shadow: none; /* Sombra normal */
+}
+
+.consultoria-link:hover img,
+.asesoramiento-link:hover img {
+    filter: blur(2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Sombra en hover */
+}
+.consultoria-link:hover a div img,
+.asesoramiento-link:hover a div img {
+    filter: blur(0px);
+    box-shadow: none; /* Sombra en hover */
+}
+
+.consultoria-link:hover a img,
+.asesoramiento-link:hover a img {
+    filter: blur(2px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Sombra en hover */
+}
+
+.texto-consultoria img,
+.texto-asesoramiento img {
     color: rgb(255, 255, 255);
+    height: 70px;
+    width: auto;
 }
-.texto-consultoria{
+.texto-consultoria:hover img,
+.texto-asesoramiento:hover img {
+    box-shadow:none;
+    height: 70px;
+    width: auto;
+}
+
+.texto-consultoria {
     position: absolute;
     display: flex;
     gap: 1em;
@@ -97,57 +157,59 @@ header nav{
     left: 1em;
     width: 290px;
 }
-.texto-consultoria h2{
-    font-size: 40px;
+.texto-asesoramiento {
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    bottom: 1em;
+    left: 1em;
+    width: 290px;
+}
+
+.texto-consultoria h2,
+.texto-asesoramiento h2 {
+    font-size: 30px;
     color: #fff;
 }
-.texto-consultoria p{
+
+.texto-consultoria p,
+.texto-asesoramiento p {
     font-size: 20px;
     color: #fff;
 }
 
-
-
-
-footer{
-
+footer {
     padding: 3em 2em 1em 2em;
     width: 100%;
-    height: 838px;
+    max-height: 838px;
     background-color: rgb(84, 83, 83);
 }
-.contacto h3{
-    font-size: 18;
+
+.contacto h3,
+.secciones h3 {
+    font-size: 18px;
     color: #fff;
 }
-.secciones h3{
-    font-size: 18;
-    color: #fff;
-}
-hr{
+
+hr {
     margin: 1em;
 }
-footer section{
+
+footer section {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
 }
-.nav-item-footer{
+
+.nav-item-footer {
     list-style: none;
-    margin-top: 5px;
 }
-.nav-link{
-text-decoration: none;
-font-size: 15px;
-color: #fff;
+
+.nav-item-footer a {
+    color: #fff;
 }
-.registrada__footer{
-    width: 100%;
-    height: 3em;
-    display: flex;
-    align-items: center;
-}
+
 .registrada__footer h5 {
-    margin-left: 15em;
+    text-align: center;
     color: #fff;
 }
