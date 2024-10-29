@@ -1,5 +1,6 @@
 const express = require('express');
-const mainRoutes = require('./routes/mainRoutes'); // Asegúrate de que la ruta sea correcta
+const mainRoutes = require('./routes/mainRoutes'); 
+const serviciosRoutes = require('./routes/serviciosRoutes')
 const app = express();
 
 const PORT = 3002;
@@ -13,6 +14,7 @@ app.use(express.static('public'));
 
 // Usa las rutas definidas en mainRoutes
 app.use('/', mainRoutes);
+app.use('/servicios', serviciosRoutes);
 
 app.listen(PORT, () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);

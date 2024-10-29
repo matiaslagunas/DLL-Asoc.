@@ -1,0 +1,67 @@
+.img-consultoria{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/imagen-politica.png');
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+    filter: brightness(0.8);
+    padding: 8em 1em;
+}
+
+.img-consultoria section{
+    margin:0 auto;
+    width: 80%;
+    height: auto;
+    padding: 5em;
+    background-color: #fff;
+}
+.img-consultoria__titulo div h1{
+font-size: 50px;
+}
+.img-consultoria__titulo div{
+    width: 100%;
+    height: 5em;
+}
+.img-consultoria__titulo h3{
+    font-size: 20px;
+}
+
+
+.bloque-trasero{
+    position: absolute;
+    width: 500px;
+    height: 150px;
+    background-color: #3eaab2;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 12px 15px;
+    top: 23em;
+    left: 30em;
+}
+
+
+.colums-consult{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 330px 330px 330px; 
+    grid-template-rows: 1fr 1fr;
+    gap: 2em;
+    justify-content: center;
+    
+}
+
+.colums-consult div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 8px 0 rgba(0, 156, 156, 0.2), 0 0 20px 0 rgba(0, 156, 156, 0.19);
+    padding: 20px;
+}
+.colums-consult div img{
+    width: 50px;
+    margin-right: 10px;
+    margin-left: 5px;
+}

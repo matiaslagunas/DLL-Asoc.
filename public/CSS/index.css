@@ -34,15 +34,15 @@
 }
 
 .titulo h1 {
-    font-size: 50px;
+    font-size: 4rem;
     color: #fff;
+    margin-bottom: 6px;
 }
 
 .titulo h5 {
     font-size: 25px;
     color: #fff;
 }
-
 .links-con-foto {
     width: 100vh;
     height: 100%;
@@ -113,16 +113,16 @@
     display: flex;
     gap: 1em;
     bottom: 4em;
-    left: 1em;
+    left: 2em;
     width: 290px;
 }
 .texto-asesoramiento {
     position: absolute;
     display: flex;
     gap: 1em;
-    bottom: 1em;
-    left: 1em;
-    width: 290px;
+    bottom: 2em;
+    left: 2em;
+    width: 300px;
 }
 
 .texto-consultoria h2,
@@ -133,6 +133,9 @@
 
 .texto-consultoria p,
 .texto-asesoramiento p {
-    font-size: 20px;
+    font-size: 16px;
     color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
 }
