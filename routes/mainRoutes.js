@@ -8,15 +8,8 @@ router.get('/', (req, res) => {
 
 // Otras rutas
 router.get('/quienes-somos', (req, res) => {
-    res.send('Esta es la página de quiénes somos');
+    res.render('QuienesSomos')
 });
 
-router.get('/servicios', (req, res) => {
-    res.send('Esta es la página de servicios');
-});
-
-router.get('/contacto', (req, res) => {
-    res.send('Esta es la página de contacto');
-});
 
 module.exports = router; // Asegúrate de exportar el router

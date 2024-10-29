@@ -1,0 +1,57 @@
+
+footer {
+    padding: 3em 2em 1em 2em;
+    width: 100%;
+    max-height: 838px;
+    background-color: rgb(84, 83, 83);
+}
+
+.contacto h3,
+.secciones h3 {
+    font-size: 18px;
+    color: #fff;
+
+}
+
+hr {
+    margin: 1em;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2em;
+}
+
+.nav-item-footer {
+    list-style: none;
+}
+
+.nav-item-footer a {
+    color: #fff;
+}
+
+.registrada__footer h5 {
+    text-align: center;
+    color: #fff;
+}
+
+.navbar-nav-footer{
+    list-style: none;
+    ;
+}
+.nav-item-footer{
+    padding-top: 4px;
+    display: grid;
+    grid-template-columns: 4px auto;
+    align-items: center;
+    gap: 2em;
+}
+.secciones .nav-item-footer {
+    grid-template-columns: auto;
+    align-items: center;
+    padding-top: 1em;
+}
+.nav-item-footer a{
+    text-decoration: none;
+}

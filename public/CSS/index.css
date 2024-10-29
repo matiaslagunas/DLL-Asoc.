@@ -3,50 +3,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: rgb(84, 83, 83);
-}
-
-header {
-    height: 5em;
-    width: 100%;
-    background-color: #17a2b8;
-}
-
-header nav {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 7em;
-}
-
-.contenedor-nav-img a {
-    margin: 1em 0;
-    height: 100%;
-}
-
-.contenedor-nav-img a img {
-    width: 150px;
-    height: 90%;
-}
-
-.navbar-nav {
-    display: flex;
-    gap: 2em;
-}
-
-.nav-item {
-    list-style: none;
-}
-
-.nav-item a {
-    text-decoration: none;
-    font-size: 20px;
-    color: #fff;
-}
-
 /* Carrusel */
 .main-contenedor {
     width: 100vw;
@@ -98,20 +54,22 @@ header nav {
 }
 
 .consultoria-link {
-    bottom: 0em;
+    bottom: -4em;
     left: 51%;
 }
 
 .asesoramiento-link {
-    bottom: 0em;
+    bottom: -4em;
     right: 51%;
 }
 
 /* Efecto de blur y sombra en imágenes */
 .consultoria-link img,
 .asesoramiento-link img {
+    opacity: 0.9;
+    transition: 0.5s;
     transition: filter 0.5s ease, box-shadow 0.5s ease;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra normal */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5); /* Sombra normal */
 }
 .consultoria-link a div img,
 .asesoramiento-link a div img {
@@ -121,8 +79,9 @@ header nav {
 
 .consultoria-link:hover img,
 .asesoramiento-link:hover img {
-    filter: blur(2px);
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Sombra en hover */
+    filter: blur(0px);
+    opacity: 1.5;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.6); /* Sombra en hover */
 }
 .consultoria-link:hover a div img,
 .asesoramiento-link:hover a div img {
@@ -132,7 +91,7 @@ header nav {
 
 .consultoria-link:hover a img,
 .asesoramiento-link:hover a img {
-    filter: blur(2px);
+    filter: blur(1px);
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Sombra en hover */
 }
 
@@ -175,41 +134,5 @@ header nav {
 .texto-consultoria p,
 .texto-asesoramiento p {
     font-size: 20px;
-    color: #fff;
-}
-
-footer {
-    padding: 3em 2em 1em 2em;
-    width: 100%;
-    max-height: 838px;
-    background-color: rgb(84, 83, 83);
-}
-
-.contacto h3,
-.secciones h3 {
-    font-size: 18px;
-    color: #fff;
-}
-
-hr {
-    margin: 1em;
-}
-
-footer section {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 2em;
-}
-
-.nav-item-footer {
-    list-style: none;
-}
-
-.nav-item-footer a {
-    color: #fff;
-}
-
-.registrada__footer h5 {
-    text-align: center;
     color: #fff;
 }

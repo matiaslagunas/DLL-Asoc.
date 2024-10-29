@@ -8,4 +8,4 @@ function showNextImage() {
     document.querySelector('.carousel').style.transform = `translateX(${offset}vw)`; // Aplica el desplazamiento
 }
 
-setInterval(showNextImage, 3000); // Cambia la imagen cada 3 segundos
+setInterval(showNextImage, 7000); // Cambia la imagen cada 3 segundos
