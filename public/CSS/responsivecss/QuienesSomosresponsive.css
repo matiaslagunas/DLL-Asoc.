@@ -1,0 +1,32 @@
+@media (max-width: 1440px){
+
+    .infoQuienesSomos-contenedor{
+        width:100%;
+        height: auto;
+        background-color: #545353;
+        color: #fff;
+        opacity: 0.98;
+        padding: 1em;
+        left: 0%;
+        top: 8em;    
+    }
+    .infoQuienesSomos-contenedor div p{
+        margin-top: 3px;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+    .infoQuienesSomos-contenedor div h2{
+        font-size: 30px;
+        color: #ffffff ;
+    }
+
+}
+
+@media (max-width: 1400px){
+    .consultoria-link,
+    .asesoramiento-link {
+    display: none;
+}
+}
