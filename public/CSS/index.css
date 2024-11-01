@@ -3,6 +3,15 @@
     margin: 0;
     box-sizing: border-box;
 }
+.oculto-by-mobile{
+    display: none;
+}
+.mobile{
+    display: none;
+}
+.links_mobile{
+    display: none;
+}
 /* Carrusel */
 .main-contenedor {
     width: 100vw;
@@ -150,4 +159,237 @@
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-style: normal;
+}
+
+
+@media (max-width: 780px) {
+    .titulo h1 {
+        font-size: 3rem;
+    }
+    .titulo h5 {
+        font-size: 20px;
+    }
+    
+    .consultoria-link {
+        bottom: 12em;
+        left: 25%;
+    }
+    
+    .asesoramiento-link {
+        bottom: -4em;
+        left: 25%;
+    }
+}
+@media (max-width: 630px) {
+
+    
+    .consultoria-link {
+        bottom: 12em;
+        left: 20%;
+    }
+    
+    .asesoramiento-link {
+        bottom: -4em;
+        left: 20%;
+    }
+}
+@media (max-width: 530px) {
+
+    
+    .consultoria-link {
+       display: none;
+    }
+    
+    .asesoramiento-link {
+        display: none;
+    }
+    .consultoria-link img,
+.asesoramiento-link img {
+    display: none;
+    
+}
+
+
+/* Carrusel */
+.main-contenedor {
+    display: none;
+}
+
+.carousel {
+    display: none;
+}
+
+.mobile{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+.mobile img {
+    width: 100vw;          /* Ocupa el 100% del ancho de la ventana */
+    height: 600px;         /* Fija la altura a 700px */
+    object-fit: cover;     /* Cubre el área de 700px de alto sin perder la proporción */
+    object-position: center; /* Centra la imagen en el contenedor */
+}
+.links_mobile{ 
+padding: 0;
+margin: 0%;
+display: block;
+}
+.links_mobile img{
+    width: 100%;
+}
+.links_mobile div {
+    width: 100%;
+    height: 300px;
+}
+.links_mobile div div{
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    bottom: 8em;
+    height: auto;
+}
+.links_mobile div div h2{ 
+font-size: 40px;
+color: #fff;
+}
+.links_mobile div div p{ 
+    font-size: 20px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: auto;
+    position: relative;
+    width: 80%;
+    margin: 0% auto;
+    bottom: 4em;
+    }
+    .img-palabras{
+        display: flex;
+        gap: 0 2em;
+    }
+    .img-palabras img{
+        height: 60px;
+        width: auto;
+    }
+
+}
+@media (max-width: 415px) {
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+    .titulo h5 {
+        font-size: 15px;
+    }
+    .consultoria-link {
+       display: none;
+    }
+    
+    .asesoramiento-link {
+        display: none;
+    }
+    .consultoria-link img,
+.asesoramiento-link img {
+    display: none;
+    
+}
+
+
+/* Carrusel */
+.main-contenedor {
+    display: none;
+}
+
+.carousel {
+    display: none;
+}
+
+.mobile{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover
+}
+.mobile img {
+    width: 100vw;          /* Ocupa el 100% del ancho de la ventana */
+    height: 600px;         /* Fija la altura a 700px */
+    object-fit: cover;     /* Cubre el área de 700px de alto sin perder la proporción */
+    object-position: center; /* Centra la imagen en el contenedor */
+}
+.links_mobile{ 
+padding: 0;
+margin: 0%;
+display: block;
+}
+.links_mobile img{
+    width: 100%;
+}
+.links_mobile div {
+    width: 100%;
+    height: 240px;
+}
+.links_mobile div div{
+    width: 100%;
+    padding: 0 20px;
+    position: relative;
+    bottom: 7em;
+    height: auto;
+}
+
+.links_mobile div div h2{ 
+font-size: 35px;
+color: #fff;
+}
+.links_mobile div div p{ 
+    font-size: 20px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    height: auto;
+    position: relative;
+    width: 90%;
+    margin: 0% auto;
+    bottom: 5em;
+    }
+    .div-asesoramiento-mobile div p{
+        bottom: 7em;
+    }
+    .img-palabras{
+        display: flex;
+        gap: 0 2em;
+
+    }
+    .img-palabras img{
+        height: 60px;
+        width: auto;
+    }
+
+}
+@media (max-width: 390px) {
+    .img-palabras{
+        display: flex;
+        
+        
+    }
+    .links_mobile{
+        display: none;
+    }
+    .links_mobile div img{
+        display: none;
+    }
+    .links_mobile div {
+        width: 100%;
+        height: 215px;
+    }
+    .links_mobile div div{ 
+        display: none;
+        }
+    .oculto-by-mobile{
+        display: block;
+        width: 100%;
+    }
 }

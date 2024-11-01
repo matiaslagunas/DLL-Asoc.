@@ -1,57 +1,122 @@
-
 footer {
     padding: 3em 2em 1em 2em;
     width: 100%;
-    max-height: 838px;
     background-color: #545353;
 }
 
-.contacto h3,
-.secciones h3 {
+h3 {
     font-size: 18px;
     color: #fff;
-
+    margin-bottom: 1em; /* Espacio debajo del encabezado */
 }
 
 hr {
-    margin: 1em;
+    margin: 1em 0; /* Espacio alrededor de la línea horizontal */
 }
 
 footer section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Espacio entre secciones */
     margin-bottom: 2em;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples filas si es necesario */
 }
 
 .nav-item-footer {
     list-style: none;
+    display: flex; /* Alineación horizontal */
+    align-items: center; /* Centra verticalmente */
 }
 
 .nav-item-footer a {
     color: #fff;
+    text-decoration: none; /* Eliminar subrayado */
 }
 
 .registrada__footer h5 {
-    text-align: center;
+    text-align: left; /* Alineación a la izquierda */
     color: #fff;
 }
 
-.navbar-nav-footer{
+.navbar-nav-footer {
     list-style: none;
-    ;
 }
-.nav-item-footer{
+
+.nav-item-footer img {
+    max-width: 30px; /* Tamaño máximo de los íconos de las secciones */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 0.5em; /* Espacio entre el ícono y el texto */
+}
+
+/* Espaciado adicional entre secciones */
+footer section + section {
+    margin-top: 2em; /* Distancia entre secciones */
+}
+
+/* Ajuste de tamaño de las imágenes */
+.nav-item-footer {
     padding-top: 4px;
-    display: grid;
-    grid-template-columns: 4px auto;
-    align-items: center;
-    gap: 2em;
+    gap: 1em; /* Espacio entre el ícono y el texto */
 }
-.secciones .nav-item-footer {
-    grid-template-columns: auto;
-    align-items: center;
-    padding-top: 1em;
+
+/* Estilo uniforme para ambas secciones (Contacto y Secciones) */
+.secciones .nav-item-footer,
+.contacto .nav-item-footer {
+    display: flex; /* Asegúrate que ambos usen flex */
+    align-items: center; /* Centra verticalmente */
 }
-.nav-item-footer a{
-    text-decoration: none;
+
+/* Alinear lista de secciones más a la izquierda */
+.contenedor-nav-links {
+    padding-left: 0; /* Eliminar padding izquierdo para alineación */
+}
+
+/* Espacio entre "Secciones" y "Contacto" */
+.contacto {
+    margin-left: 1em; /* Espacio a la izquierda de la sección de contacto */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    footer {
+        padding: 2em 1em; /* Menos espaciado en pantallas pequeñas */
+    }
+
+    .logo-empresarial {
+        margin-bottom: 1em;
+        margin-left: 2em;
+    }
+
+    footer section {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea los elementos a la izquierda */
+        text-align: left; /* Mantiene el texto a la izquierda */
+    }
+    
+    .navbar-nav-footer {
+        margin-top: 0;
+        text-align: left; /* Mantiene la alineación a la izquierda */
+    }
+    .secciones,
+    .contacto {
+        margin-left: 1em;
+    }
+    .secciones h3,
+    .contacto h3 {
+        font-size: 16px; /* Tamaño de fuente un poco más pequeño */
+        margin-bottom: 5px; /* Espacio debajo de los encabezados */
+    }
+
+
+    .nav-item-footer {
+        padding-top: 0.5em; /* Reduce el espaciado superior */
+        gap: 0.5em; /* Menor espacio entre los elementos */
+    }
+
+    .nav-item-footer a {
+        font-size: 14px; /* Ajusta el tamaño del texto para móviles */
+    }
+
+    .nav-item-footer img {
+        max-width: 25px; /* Tamaño máximo de los íconos de las secciones en móviles */
+    }
 }
