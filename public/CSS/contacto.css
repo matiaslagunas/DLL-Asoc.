@@ -1,0 +1,127 @@
+.oculto-by-mobile{
+    display: none;
+
+}
+.info-contacto-mobile{
+    display: none;
+}
+.fondo-contacto{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/contacto-base.jpg');
+    background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+    background-position: start; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+}
+.info-contacto{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+.info-contacto div h1{
+    color: #fff;
+    font-size: 60px;
+}
+.info-contacto div p{
+    color: #fff;
+    font-size: 20px;
+}
+
+.info-contacto div .navbar-nav-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.info-contacto div .navbar-nav-footer li a{
+    font-size: 20px;
+}
+@media (max-width:1450px) {
+    .info-contacto{
+        left: 15%;
+        gap: 5em;
+    }
+    .info-contacto div p{
+        font-size: 18px;
+    }
+    .info-contacto div .navbar-nav-footer li a{
+        font-size: 18px;
+    }
+    .info-contacto div h1{
+        color: #fff;
+        font-size: 50px;
+    }
+    
+}
+@media (max-width:1120px) {
+    .info-contacto{
+        left: 15%;
+        gap: 5em;
+    }
+    .info-contacto div p{
+        font-size: 18px;
+    }
+    .info-contacto div .navbar-nav-footer li a{
+        font-size: 18px;
+    }
+    .info-contacto div h1{
+        color: #fff;
+        font-size: 50px;
+    }
+    
+}
+@media (max-width:768px){
+    .info-contacto{
+        left: 20%;
+        gap: 5em;
+    }
+    .info-contacto div p{
+        font-size: 18px;
+    }
+    .info-contacto div .navbar-nav-footer li a{
+        font-size: 18px;
+    }
+    .info-contacto div h1{
+        color: #fff;
+        font-size: 50px;
+    }
+}
+@media (max-width:500px){
+    .fondo-contacto{
+      display: none;
+        
+    }
+    .info-contacto{
+        display: none;
+    }
+    .oculto-by-mobile{
+        display: block;
+        width: 100%;
+    }
+    section div .info-contacto-mobile{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        position: relative;
+        background-image: url('/images/contacto-mobile.jpg');
+        background-size: cover; /* Ajusta la imagen para cubrir toda el área */
+        background-position: center; /* Centra la imagen */
+    }
+    .info-contacto-mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 2em;
+        gap: 2em;
+    }
+    .info-contacto-mobile div h1{
+        color: #fff;
+        font-size: 40px;
+    }
+    .info-contacto-mobile div p{
+        color: #fff;
+        font-size: 20px;
+    }
+}

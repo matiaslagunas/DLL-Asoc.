@@ -7,5 +7,8 @@ const router = express.Router();
 router.get('/consultoria', (req, res) => {
     res.render('consultoria')
 });
+router.get('/Asesoramiento-financiero', (req, res) => {
+    res.render('consultoria')
+});
 
 module.exports = router; // Asegúrate de exportar el router

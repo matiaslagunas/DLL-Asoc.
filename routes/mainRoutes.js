@@ -15,5 +15,8 @@ router.get('/quienes-somos', (req, res) => {
 router.get('/servicios', (req, res) => {
     res.render('servicios')
 });
+router.get('/contacto', (req, res) => {
+    res.render('contacto')
+})
 
 module.exports = router; // Asegúrate de exportar el router
