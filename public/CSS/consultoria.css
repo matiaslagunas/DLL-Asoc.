@@ -25,7 +25,7 @@
     margin: 0 auto;
     width: 100%;
     height: auto;
-    padding: 1em 6em;
+    padding: 4em 6em;
     background-color: #fff;
     opacity: 0.98;
     color: #000000;
@@ -34,6 +34,7 @@
 .img-consultoria__titulo div h1 {
     font-size: 60px;
     color: #3eaab2;
+    
 }
 
 .img-consultoria__titulo div {
@@ -201,14 +202,24 @@ header nav {
 @media (min-width:1350px) {
     .bloque-trasero {
         color: #fff;
-        left: 25em;
+        left: 20em;
     }
     .consultoria-seccion {
-        padding: 1em 20em;
+        padding: 2em 18em 3em 18em;
     }
     .colums-consult {
         grid-template-columns: 330px 330px 330px;
         grid-template-rows: 1fr 1fr;
+        }
+        .img-consultoria__titulo div h1 {
+            font-size: 60px;
+            color: #3eaab2;
+            
+        }
+        
+        .img-consultoria__titulo div {
+            width: 100%;
+            height: 5em;
         }
 }
 
