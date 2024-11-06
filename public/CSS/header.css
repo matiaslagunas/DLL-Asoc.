@@ -73,22 +73,26 @@ header nav {
     border: none;
     cursor: pointer;
 }
+
 .contenedor-nav-links-compu{
     display: flex;
     flex-direction: row;
     background-color: #2c888f;
     width: auto;
 }
+
 .navbar-nav-compu{
     display: flex;
     flex-direction: row;
     gap: 1em;
 }
+
 /* Responsivo */
 @media (max-width: 768px) {
     .contenedor-nav-links-compu{
         display: none;
     }
+
     header nav {
         padding: 1em;
     }
