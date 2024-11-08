@@ -1,3 +1,17 @@
+
+.geist-Titulos {
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.geist-subTitulos{
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 .img-quienes-somos-mobile{
     display: none;
 }
@@ -18,7 +32,9 @@ main{
 }
 .texto-quienes-somos h2{
     color: #2c888f;
-    font-size: 35px;
+    font-size: 30px;
+    margin-top: 7px;
+    line-height: 1;
 }
 .texto-quienes-somos p{
 

@@ -8,7 +8,7 @@ router.get('/consultoria', (req, res) => {
     res.render('consultoria')
 });
 router.get('/Asesoramiento-financiero', (req, res) => {
-    res.render('consultoria')
+    res.render('asesoramiento-financiero')
 });
 
 module.exports = router; // Asegúrate de exportar el router

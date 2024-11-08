@@ -22,7 +22,7 @@
 .img-consultoria {
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/imagen-finanzas.png');
+    background-image: url('/images/quienes-somos-imagen.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -56,6 +56,7 @@
 
 .img-consultoria__titulo h3 {
     font-size: 20px;
+    color: #2c888f;
 }
 
 .img-consultoria__titulo h2 {
@@ -63,29 +64,14 @@
     color: #2c888f;
 }
 
-/* Bloque trasero */
-.bloque-trasero {
-    position: absolute;
-    width: 500px; /* Mantiene el ancho deseado */
-    height: 150px;
-    background-color: #3eaab2;
-    display: flex;
-    color: #fff;
-    justify-content: start; /* Centrado */
-    align-items: start; /* Centrado */
-    padding: 12px 15px;
-    top: 10em; /* Coloca el bloque en la parte superior de la sección */
-    left: 20em;
-    z-index: 0; /* Asegúrate de que esté detrás */
-}
 
 /* Columna de consultoría */
 .colums-consult {
     width: 100%;
     display: grid;
     z-index: 1; /* Colocación en la parte superior */
-        grid-template-columns: 330px 330px ;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 440px 440px ;
+        grid-template-rows: 1fr 1fr;
     gap: 2em;
     justify-content: center;
     position: relative;
@@ -94,14 +80,15 @@
 }
 
 .colums-consult div {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
-    justify-content: center;
     box-shadow: 0 0 8px 0 rgba(0, 156, 156, 0.2), 0 0 20px 0 rgba(0, 156, 156, 0.19);
-    padding: 20px;
+    padding: 30px 50px;
     background-color: #fff;
     color: #3eaab2;
 }
+
 
 .colums-consult div img {
     width: 50px;
@@ -168,7 +155,7 @@ header nav {
 
 
 
-@media (min-width:320px){
+@media (min-width:300px){
     .consultoria-seccion {
         position: relative; /* Necesario para el posicionamiento absoluto del bloque trasero */
         margin: 0 auto;
@@ -179,48 +166,53 @@ header nav {
         opacity: 0.98;
         color: #000000;
     }
+    .img-consultoria__titulo div h1 {
+        font-size: 40px;
+        color: #3eaab2;
+        
+    }
+    .img-consultoria__titulo div {
+        width: 100%;
+        height: auto;
+    }
     .colums-consult {
         margin: 6em 0em 1em 0em;
         grid-template-columns: 1fr ;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    .bloque-trasero {
-        width: 100%; 
-        top: 14em; 
-        left: 0%;
-    }
+
 }
 @media (min-width:768px){
     .colums-consult {
-        grid-template-columns: 330px 330px ;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 440px  ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
-    .bloque-trasero {
-        width: 400px; 
-        top: 12em; 
-        left: 10em;
+    .img-consultoria__titulo div {
+        width: 100%;
+        height: auto;
     }
+
 }
 @media (min-width:1068px){
-    .bloque-trasero {
-        color: #fff;
-        left: 10em;
-    }
+
     .colums-consult {
-        grid-template-columns: 330px 330px 330px;
+        grid-template-columns: 440px 440px ;
+        grid-template-rows: 1fr 1fr;
+        }
+}
+@media (min-width:988px){
+    .colums-consult {
+        grid-template-columns: 440px 440px;
         grid-template-rows: 1fr 1fr;
         }
 }
 @media (min-width:1350px) {
-    .bloque-trasero {
-        color: #fff;
-        left: 20em;
-    }
+
     .consultoria-seccion {
         padding: 2em 18em 3em 18em;
     }
     .colums-consult {
-        grid-template-columns: 330px 330px 330px;
+        grid-template-columns: 440px 440px;
         grid-template-rows: 1fr 1fr;
         }
         .img-consultoria__titulo div h1 {
@@ -236,20 +228,16 @@ header nav {
 }
 
 @media (min-width:1780px){
-    .bloque-trasero {
-        left: 30em;
-    }
+
     .colums-consult {
-        grid-template-columns: 330px 330px 330px;
+        grid-template-columns: 440px 440px;
         grid-template-rows: 1fr 1fr;
         }
 }
 @media (min-width:2000px){
-    .bloque-trasero {
-        left: 40em;
-    }
+
     .colums-consult {
-        grid-template-columns: 330px 330px 330px;
+        grid-template-columns: 500px 500px;
         grid-template-rows: 1fr 1fr;
         }
     .consultoria-seccion {

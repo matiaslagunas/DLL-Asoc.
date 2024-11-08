@@ -1,3 +1,19 @@
+.geist-Titulos {
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+  body{
+    color: #2c888f;
+  }
+
+.geist-subTitulos{
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
 .oculto-by-mobile{
     display: none;
 
@@ -8,7 +24,7 @@
 .fondo-contacto{
     width: 100vw;
     height: 100vh;
-    background-image: url('/images/contacto-base.jpg');
+    background-image: url('/images/base-area-spertice.jpg');
     background-size: cover; /* Ajusta la imagen para cubrir toda el área */
     background-position: start; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */

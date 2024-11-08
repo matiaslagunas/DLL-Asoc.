@@ -5,7 +5,7 @@ footer {
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
     margin-bottom: 1em; /* Espacio debajo del encabezado */
 }
@@ -35,6 +35,7 @@ footer section {
 .registrada__footer h5 {
     text-align: left; /* Alineación a la izquierda */
     color: #fff;
+    font-size: 15px;
 }
 
 .navbar-nav-footer {
@@ -64,6 +65,11 @@ footer section + section {
     display: flex; /* Asegúrate que ambos usen flex */
     align-items: center; /* Centra verticalmente */
 }
+.nav-item-footer:hover a
+ {
+    color: #b8b8b8;
+}
+
 
 /* Alinear lista de secciones más a la izquierda */
 .contenedor-nav-links {

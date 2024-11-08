@@ -3,6 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+.geist-Titulos {
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.geist-subTitulos{
+    font-family: "Geist", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
 .oculto-by-mobile{
     display: none;
 }
