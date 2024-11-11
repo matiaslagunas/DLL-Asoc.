@@ -13,7 +13,9 @@ h3 {
 hr {
     margin: 1em 0; /* Espacio alrededor de la línea horizontal */
 }
-
+footer {
+    z-index: 2;
+}
 footer section {
     display: flex;
     justify-content: space-between; /* Espacio entre secciones */

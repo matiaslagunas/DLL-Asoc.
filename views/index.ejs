@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,107 +12,95 @@
     <script src="/js/menuindex.js" defer></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <%- include('partials/header') %>
 
-    <main class="main-contenedor">
-        <div class="carousel">
-            <div class="carousel-images">
-                <img src="/images/slider-suproyecto.jpg" alt="Imagen 1">
-                <img src="/images/slider-consultoria.jpg" alt="Imagen 2">         
+        <main class="main-contenedor">
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="/images/slider-suproyecto.jpg" alt="Imagen 1">
+                    <img src="/images/slider-consultoria.jpg" alt="Imagen 2">
+                </div>
             </div>
-        </div>
-    </main>
-    <section class="mobile">
-        <img src="/images/slider-suproyecto.jpg" alt="">
-    </section>
+        </main>
+        <section class="mobile">
+            <img src="/images/slider-suproyecto.jpg" alt="">
+        </section>
 
-    
 
-    <section class="titulo">
-        <h1 class="geist-Titulos">Su proyecto <br> es el nuestro</h1>
-        <h5 class="geist-subTitulos">Más de 20 años acompañando a nuestros clientes</h5>
-    </section>
-    
-    <section class="links-con-foto">
-        <div class="consultoria-link">
-            <a href="/consultoria">
-                <img src="/images/acceso-directo-consultoria.jpg" alt="imgConsultoria">
-            </a>
-            <a href="/consultoria">
-                <div class="texto-asesoramiento">
-                    <img src="/images/servicios-iconos-financiero.png" alt="">
-                    <div>
-                        <h2 class="geist-Titulos">Asesoramiento Financiero</h2>
-                        <p class="geist-subTitulos">Brindamos un asesoramiento integral a clientes para la gestión de proyectos innovadores</p>
+
+        <section class="titulo">
+            <h1 class="geist-Titulos">Su proyecto <br> es el nuestro</h1>
+            <h5 class="geist-subTitulos">Más de 20 años acompañando a nuestros clientes</h5>
+        </section>
+
+        <section class="links-con-foto">
+            <div class="consultoria-link">
+                <a href="/servicios/Asesoramiento-financiero">
+                    <img src="/images/acceso-directo-consultoria.jpg" alt="imgConsultoria">
+                </a>
+                <a href="/servicios/Asesoramiento-financiero">
+                    <div class="texto-asesoramiento">
+                        <img src="/images/servicios-iconos-financiero.png" alt="">
+                        <div>
+                            <h2 class="geist-Titulos">Asesoramiento Financiero</h2>
+                            <p class="geist-subTitulos">Brindamos un asesoramiento integral a clientes para la gestión
+                                de proyectos innovadores</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-        <div class="asesoramiento-link">
-            <a href="/asesoramiento-financiero">
-                <img src="/images/acceso-directo-asesoramiento.jpg" alt="imgAsesoramiento">
-            </a>
-            <a href="/asesoramiento-financiero">
-                <div class="texto-consultoria">
-                    <img src="/images/servicios-icono-consultoria.png" alt="">
-                    <div>
-                        <h2 class="geist-Titulos">Consultoría</h2>
-                        <p class="geist-subTitulos">Contamos con un equipo altamente calificado, para seguros y maximizar carteras</p>
+                </a>
+            </div>
+            <div class="asesoramiento-link">
+                <a href="/servicios/consultoria">
+                    <img src="/images/acceso-directo-asesoramiento.jpg" alt="imgAsesoramiento">
+                </a>
+                <a href="/servicios/consultoria">
+                    <div class="texto-consultoria">
+                        <img src="/images/servicios-icono-consultoria.png" alt="">
+                        <div>
+                            <h2 class="geist-Titulos">Consultoría</h2>
+                            <p class="geist-subTitulos">Contamos con un equipo altamente calificado, para seguros y
+                                maximizar carteras</p>
+                        </div>
                     </div>
-                </div>
-            </a>
-        </div>
-    </section>
-    <section class="links_mobile">
-        <div>
-            <img src="/images/acceso-directo-consultoria.jpg" alt="">
-            <div class="correccion-p">
-                <div class="img-palabras">
-                    <img src="/images/servicios-icono-consultoria.png" alt="">
-                    <h2 class="geist-Titulos">Consultoría</h2>
-                </div>
-                <p class="geist-subTitulos">Contamos con un equipo altamente calificado, para seguros y maximizar carteras</p>
-            </div>  
-            
-        </div>
-        <div class="div-asesoramiento-mobile">
-            <img src="/images/acceso-directo-asesoramiento.jpg" alt="">
-            <div><div class="img-palabras">
-                <img src="/images/servicios-iconos-financiero.png" alt="">
-                <h2 class="geist-Titulos">Asesoramiento Financiero</h2>
+                </a>
             </div>
-            <p class="geist-subTitulos">Brindamos un asesoramiento integral a clientes para la gestión de proyectos innovadores</p>
-                
-            </div>
-            
+        </section>
+        <section class="links_mobile">
+           
+
+        </section>
+        <div class="oculto-by-mobile">
+            <a href="/servicios/Asesoramiento-financiero"><img class="oculto-by-mobile"
+                    src="/images/asesoramiento.png" alt=""></a>
+            <a href="/servicios/consultoria"><img class="oculto-by-mobile"
+                    src="/images/consultoria-mobil.png" alt=""></a>
         </div>
-    </section>
-    <div class="oculto-by-mobile">
-        <a href="/asesoramiento-financiero"><img class="oculto-by-mobile" src="/images/Captura de pantalla 2024-10-31 a la(s) 21.17.32.png" alt=""></a>
-        <a href="/consultoria"><img class="oculto-by-mobile" src="/images/Captura de pantalla 2024-10-31 a la(s) 21.17.41.png" alt=""></a>
-    </div>
 
 
 
-    <%- include('partials/footer') %>
+        <%- include('partials/footer') %>
 
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.contenedor-nav-links');
-        const body = document.body;
-    
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-            body.classList.toggle('menu-open');
-        });
-    </script>
-    
-    
-    
-    <script src="/js/carrusel.js"></script>
+            <script>
+                const menuToggle = document.querySelector('.menu-toggle');
+                const navLinks = document.querySelector('.contenedor-nav-links');
+                const body = document.body;
+
+                menuToggle.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                    body.classList.toggle('menu-open');
+                });
+            </script>
+
+
+
+            <script src="/js/carrusel.js"></script>
 </body>
+
 </html>
