@@ -27,7 +27,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    filter: brightness(0.8);
+    
     padding: 7em 0em;
     box-shadow: 0 0 20px 5px rgba(0, 156, 156, 0.4), 0 0 30px 10px rgba(0, 156, 156, 0.3);
 }
@@ -150,7 +150,7 @@
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: none;
-        filter: brightness(0.8);
+        
         padding: 0em 0em;
         box-shadow: 0 0 20px 5px rgba(0, 156, 156, 0.4), 0 0 30px 10px rgba(0, 156, 156, 0.3);
     }

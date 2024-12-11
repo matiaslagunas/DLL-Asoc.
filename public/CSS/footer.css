@@ -33,6 +33,10 @@ footer section {
     color: #fff;
     text-decoration: none; /* Eliminar subrayado */
 }
+.nav-item-footer p {
+    color: #fff;
+    text-decoration: none; /* Eliminar subrayado */
+}
 
 .registrada__footer h5 {
     text-align: left; /* Alineación a la izquierda */
