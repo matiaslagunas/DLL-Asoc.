@@ -3,7 +3,7 @@ const mainRoutes = require('./routes/mainRoutes');
 const serviciosRoutes = require('./routes/serviciosRoutes')
 const app = express();
 
-const PORT = 3002;
+const PORT = 3000;
 
 // Configura EJS como motor de plantillas
 app.set('view engine', 'ejs'); // Establece EJS como motor de vista
