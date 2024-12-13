@@ -16,6 +16,7 @@ app.use(express.static('public'));
 app.use('/', mainRoutes);
 app.use('/servicios', serviciosRoutes);
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Servidor escuchando en http://localhost:${PORT}`);
 });
+
