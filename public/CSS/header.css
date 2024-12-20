@@ -22,7 +22,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1em 9em;
+    padding: 20px 9em;
 }
 
 .contenedor-nav-img a img {
@@ -42,7 +42,11 @@ header nav {
     top: 5em; /* Aparece justo debajo del header fijo */
     left: 0;
 }
+.logo-header{
+    height: 100%;
 
+
+}
 .navbar-nav {
     display: flex;
     flex-direction: column;
